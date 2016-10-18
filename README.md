@@ -19,9 +19,12 @@ Luosimao人机验证 for Mediawiki
 
 // Mediawiki版本大于或等于1.25<br />
 wfLoadExtensions( array( 'ConfirmEdit', 'ConfirmEdit/LSMCaptcha' ) );<br />
+$wgCaptchaClass = 'LSMCaptcha';
+
 // 其它Mediawiki版本<br />
 require_once "$IP/extensions/ConfirmEdit/ConfirmEdit.php";<br />
-require_once "$IP/extensions/ConfirmEdit/LSMCaptcha.php";
+require_once "$IP/extensions/ConfirmEdit/LSMCaptcha.php";<br />
+$wgCaptchaClass = 'LSMCaptcha';
 
 ============================
 
